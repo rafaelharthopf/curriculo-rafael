@@ -4,108 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafael Harthopf Pereira - Desenvolvedor Back-End</title>
-     <link rel="icon" href="https://img.icons8.com/clouds/100/technology.png" type="image/png">
+    <link rel="icon" href="https://img.icons8.com/clouds/100/technology.png" type="image/png">
     <link rel="shortcut icon" href="https://img.icons8.com/clouds/100/technology.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Rafael Harthopf Pereira</h1>
-            <p>Desenvolvedor Back-End</p>
+            <h1 id="name">Rafael Harthopf Pereira</h1>
+            <p id="profession">Desenvolvedor Back-End</p>
         </div>
     </header>
 
+    <div class="idioma-selector">
+        <a href="javascript:void(0);" onclick="changeLanguage('pt')" class="idioma-link">
+            <img src="https://img.icons8.com/?size=100&id=N07GMBCvCLTY&format=png&color=000000" alt="Português" class="idioma-icone"/>
+        </a>
+        <a href="javascript:void(0);" onclick="changeLanguage('en')" class="idioma-link">
+            <img src="https://img.icons8.com/?size=100&id=15534&format=png&color=000000" alt="English" class="idioma-icone"/>
+        </a>
+        <a href="javascript:void(0);" onclick="changeLanguage('es')" class="idioma-link">
+            <img src="https://img.icons8.com/?size=100&id=18099&format=png&color=000000" alt="Español" class="idioma-icone"/>
+            
+        </a>
+    </div>
+
     <main class="container">
         <section>
-            <h2>Contato</h2>
+            <h2 id="contact-header">Contato</h2>
             <ul class="ul-contato">
                 <li class="li-contato">
-                    <a href="https://www.linkedin.com/in/rafaelharthopfpereira/" target="_blank">
-                        <img width="48" height="48" src="https://img.icons8.com/color/48/linkedin.png" class="whatsapp-icon" alt="linkedin"/>
+                    <a href="https://www.linkedin.com/in/rafaelharthopfpereira/" target="_blank" class="contato-link">
+                        <img width="48" height="48" src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" class="contato-icon"/>
+                        <span id="linkedin">LinkedIn</span>
                     </a>
-                    <a href="https://api.whatsapp.com/send?phone=18997941144" target="_blank" rel="noopener noreferrer">
-                        <img src="whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+                </li>
+                <li class="li-contato">
+                    <a href="https://api.whatsapp.com/send?phone=18997941144" target="_blank" class="contato-link">
+                        <img width="48" height="48" src="https://img.icons8.com/ios/50/whatsapp.png" alt="WhatsApp" class="contato-icon"/>
+                        <span id="whatsapp">WhatsApp</span>
                     </a>
-                    <a href="tel:+5518997941144" class="Blondie">
-                        <img src="chamada-telefonica.png" alt="telefone" class="whatsapp-icon">
+                </li>
+                <li class="li-contato">
+                    <a href="tel:+5518997941144" class="contato-link">
+                        <img width="48" height="48" src="https://img.icons8.com/ios/50/phone.png" alt="Telefone" class="contato-icon"/>
+                        <span id="phone">(18) 99794-1144</span>
                     </a>
-                    <span>Telefone: (18)99794-1144</span>
                 </li>
                 <li class="li-contato-email">
-                    <a href="mailto:harthopfpereirarafael@gmail.com"> 
-                        <img width="50" height="50" src="https://img.icons8.com/ios/50/new-post--v1.png" class="whatsapp-icon" alt="new-post--v1"/> 
-                        harthopfpereirarafael@gmail.com
+                    <a href="mailto:harthopfpereirarafael@gmail.com" class="contato-link"> 
+                        <img width="50" height="50" src="https://img.icons8.com/ios/50/new-post--v1.png" class="contato-icon" alt="Email"/> 
+                        <span id="email">Email</span>
                     </a>
                 </li>
             </ul>
         </section>
 
         <section>
-            <h2>Resumo Profissional</h2>
-            <p>Desenvolvedor Back-End com sólida experiência em JavaScript, TypeScript, Node.js e PHP
-                (Laravel). Expertise em arquiteturas de microsserviços, integração com AWS e Kafka, e
-                desenvolvimento de soluções seguras e escaláveis para setores financeiros e bancários. Habilidade
-                avançada em bancos de dados SQL, MongoDB e PostgreSQL, com um histórico comprovado de
-                entrega de projetos desafiadores e eficientes.
-            </p>
+            <h2 id="summary-header">Resumo Profissional</h2>
+            <p id="summary-text">Desenvolvedor Back-End com sólida experiência em JavaScript, TypeScript, Node.js e PHP (Laravel). Expertise em arquiteturas de microsserviços, integração com AWS e Kafka, e desenvolvimento de soluções seguras e escaláveis para setores financeiros e bancários. Habilidade avançada em bancos de dados SQL, MongoDB e PostgreSQL, com um histórico comprovado de entrega de projetos desafiadores e eficientes.</p>
         </section>
 
         <section>
-            <h2>Experiência Profissional</h2>
+            <h2 id="experience-header">Experiência Profissional</h2>
             <ul class="teste">
                 <li>
-                    <h3>Desenvolvedor Web Fullstack | MikroTikRio</h3>
-                    <p>Presidente Prudente, SP | 11/2023 – Atual</p>
+                    <h3 id="mikrotik-title">Desenvolvedor Web Fullstack | MikroTikRio</h3>
+                    <p id="mikrotik-location">Presidente Prudente, SP | 11/2023 – Atual</p>
                     <ul>
-                        <li class="exp-prof">Desenvolvimento principal em projetos web utilizando PHP (Laravel) para o backend e Bootstrap para o frontend.</li>
-                        <li class="exp-prof">Contribuição no design e implementação de sistemas complexos, focando em eficiência e escalabilidade.</li>
-                        <li class="exp-prof">Experiência significativa em integrações de APIs e gerenciamento bancário para otimização de processos e segurança de transações financeiras.</li>
-                        <li class="exp-prof">Microsserviços utilizando AWS (Amazon Web Services), Docker e Kafka.</li>
+                        <li class="exp-prof" id="mikrotik-1">Desenvolvimento principal em projetos web utilizando PHP (Laravel) para o backend e Bootstrap para o frontend.</li>
+                        <li class="exp-prof" id="mikrotik-2">Contribuição no design e implementação de sistemas complexos, focando em eficiência e escalabilidade.</li>
+                        <li class="exp-prof" id="mikrotik-3">Experiência significativa em integrações de APIs e gerenciamento bancário para otimização de processos e segurança de transações financeiras.</li>
+                        <li class="exp-prof" id="mikrotik-4">Microsserviços utilizando AWS (Amazon Web Services), Docker e Kafka.</li>
                     </ul>
                 </li>
                 <li>
-                    <h3>Desenvolvedor Backend | Dharma IT Solutions</h3>
-                    <p>Presidente Prudente, SP | 09/2022 – 10/2023</p>
+                    <h3 id="dharma-title">Desenvolvedor Backend | Dharma IT Solutions</h3>
+                    <p id="dharma-location">Presidente Prudente, SP | 09/2022 – 10/2023</p>
                     <ul>
-                        <li class="exp-prof">Desenvolvimento de produtos com arquiteturas resilientes e escaláveis utilizando NestJS, Node.js, JavaScript e TypeScript.</li>
-                        <li class="exp-prof">Experiência significativa em integrações de APIs.</li>
-                        <li class="exp-prof">Trabalho com microsserviços utilizando AWS (Amazon Web Services), Docker e Kafka.</li>
-                        <li class="exp-prof">Colaboração efetiva com equipes de frontend para integração de componentes.</li>
+                        <li class="exp-prof" id="dharma-1">Desenvolvimento de produtos com arquiteturas resilientes e escaláveis utilizando NestJS, Node.js, JavaScript e TypeScript.</li>
+                        <li class="exp-prof" id="dharma-2">Experiência significativa em integrações de APIs.</li>
+                        <li class="exp-prof" id="dharma-3">Trabalho com microsserviços utilizando AWS (Amazon Web Services), Docker e Kafka.</li>
+                        <li class="exp-prof" id="dharma-4">Colaboração efetiva com equipes de frontend para integração de componentes.</li>
                     </ul>
                 </li>
                 <li>
-                    <h3>Estagiário Backend | Dharma IT Solutions</h3>
-                    <p>Presidente Prudente, SP | 04/2021 – 08/2022</p>
+                    <h3 id="intern-title">Estagiário Backend | Dharma IT Solutions</h3>
+                    <p id="intern-location">Presidente Prudente, SP | 04/2021 – 08/2022</p>
                     <ul>
-                        <li class="exp-prof">Desenvolvimento de produtos com arquiteturas resilientes e escaláveis utilizando Node.js, JavaScript e TypeScript.</li>
-                        <li class="exp-prof">Experiência significativa em integrações de APIs.</li>
-                        <li class="exp-prof">Colaboração efetiva com equipes de frontend para integração de componentes.</li>
+                        <li class="exp-prof" id="intern-1">Desenvolvimento de produtos com arquiteturas resilientes e escaláveis utilizando Node.js, JavaScript e TypeScript.</li>
+                        <li class="exp-prof" id="intern-2">Experiência significativa em integrações de APIs.</li>
+                        <li class="exp-prof" id="intern-3">Colaboração efetiva com equipes de frontend para integração de componentes.</li>
                     </ul>
                 </li>
             </ul>
         </section>
 
         <section>
-            <h2>Formação</h2>
-            <p><strong>Tecnólogo em Análise e Desenvolvimento de Sistemas | TOLEDO PRUDENTE |<br> Presidente Prudente</strong> </p>
+            <h2 id="education-header">Formação</h2>
+            <p id="education-text"><strong>Tecnólogo em Análise e Desenvolvimento de Sistemas | TOLEDO PRUDENTE | Presidente Prudente</strong> </p>
         </section>
 
         <section>
-            <h2>Habilidades Técnicas</h2>
+            <h2 id="skills-header">Habilidades Técnicas</h2>
             <ul>
-                <li><strong>Linguagens de Programação:</strong> TypeScript, JavaScript, Node.js, PHP</li>
-                <li><strong>Frameworks:</strong> NestJS, Express, Laravel</li>
-                <li><strong>Bancos de Dados:</strong> SQL, MongoDB, PostgreSQL</li>
-                <li><strong>Tecnologias e Ferramentas:</strong> Docker, AWS, Kafka, Git, Bitbucket, Ubuntu, Debian, Swagger, Postman, Jira</li>
-                <li><strong>Metodologias:</strong> API RESTful, Desenvolvimento Ágil</li>
+                <li><strong id="skills-lang">Linguagens de Programação:</strong> TypeScript, JavaScript, Node.js, PHP</li>
+                <li><strong id="skills-framework">Frameworks:</strong> NestJS, Express, Laravel</li>
+                <li><strong id="skills-db">Bancos de Dados:</strong> SQL, MongoDB, PostgreSQL</li>
+                <li><strong id="skills-tools">Tecnologias e Ferramentas:</strong> Docker, AWS, Kafka, Git, Bitbucket, Ubuntu, Debian, Swagger, Postman, Jira</li>
+                <li><strong id="skills-method">Metodologias:</strong> API RESTful, Desenvolvimento Ágil</li>
             </ul>
         </section>
 
         <section>
-            <h2>Projetos Destacados</h2>
-            <strong><p><a href="https://www.receitanet.net/" target="_blank">ReceitaNet</a> - 
-            SISTEMA PARA ADMINISTRAÇÃO DE PROVEDORES </strong><br>
+            <h2 id="projects-header">Projetos Destacados</h2>
+            <strong><p id="project-receitanet"><a href="https://www.receitanet.net/" target="_blank">ReceitaNet</a> - SISTEMA PARA ADMINISTRAÇÃO DE PROVEDORES </strong><br>
             O Receitanet está integrado aos maiores bancos do Brasil e ainda possui conexão 
             transparente com o Boleto Fácil, Gerencianet, Iugu e GalaxPay.</p>
         </section>
@@ -113,8 +126,171 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Rafael Harthopf Pereira</p>
+            <p id="footer-text">&copy; 2024 Rafael Harthopf Pereira</p>
         </div>
     </footer>
+
+    <script>
+        const languages = {
+            pt: {
+                name: "Rafael Harthopf Pereira",
+                profession: "Desenvolvedor Back-End",
+                contactHeader: "Contato",
+                linkedin: "LinkedIn",
+                whatsapp: "WhatsApp",
+                phone: "(18) 99794-1144",
+                email: "Email",
+                summaryHeader: "Resumo Profissional",
+                summaryText: "Desenvolvedor Back-End com sólida experiência em JavaScript, TypeScript, Node.js e PHP (Laravel). Expertise em arquiteturas de microsserviços, integração com AWS e Kafka, e desenvolvimento de soluções seguras e escaláveis para setores financeiros e bancários. Habilidade avançada em bancos de dados SQL, MongoDB e PostgreSQL, com um histórico comprovado de entrega de projetos desafiadores e eficientes.",
+                experienceHeader: "Experiência Profissional",
+                mikrotikTitle: "Desenvolvedor Web Fullstack | MikroTikRio",
+                mikrotikLocation: "Presidente Prudente, SP | 11/2023 – Atual",
+                mikrotik1: "Desenvolvimento principal em projetos web utilizando PHP (Laravel) para o backend e Bootstrap para o frontend.",
+                mikrotik2: "Contribuição no design e implementação de sistemas complexos, focando em eficiência e escalabilidade.",
+                mikrotik3: "Experiência significativa em integrações de APIs e gerenciamento bancário para otimização de processos e segurança de transações financeiras.",
+                mikrotik4: "Microsserviços utilizando AWS (Amazon Web Services), Docker e Kafka.",
+                dharmaTitle: "Desenvolvedor Backend | Dharma IT Solutions",
+                dharmaLocation: "Presidente Prudente, SP | 09/2022 – 10/2023",
+                dharma1: "Desenvolvimento de produtos com arquiteturas resilientes e escaláveis utilizando NestJS, Node.js, JavaScript e TypeScript.",
+                dharma2: "Experiência significativa em integrações de APIs.",
+                dharma3: "Trabalho com microsserviços utilizando AWS (Amazon Web Services), Docker e Kafka.",
+                dharma4: "Colaboração efetiva com equipes de frontend para integração de componentes.",
+                internTitle: "Estagiário Backend | Dharma IT Solutions",
+                internLocation: "Presidente Prudente, SP | 04/2021 – 08/2022",
+                intern1: "Desenvolvimento de produtos com arquiteturas resilientes e escaláveis utilizando Node.js, JavaScript e TypeScript.",
+                intern2: "Experiência significativa em integrações de APIs.",
+                intern3: "Colaboração efetiva com equipes de frontend para integração de componentes.",
+                educationHeader: "Formação",
+                educationText: "Tecnólogo em Análise e Desenvolvimento de Sistemas | TOLEDO PRUDENTE | Presidente Prudente",
+                skillsHeader: "Habilidades Técnicas",
+                skillsLang: "Linguagens de Programação",
+                skillsFramework: "Frameworks",
+                skillsDb: "Bancos de Dados",
+                skillsTools: "Tecnologias e Ferramentas",
+                skillsMethod: "Metodologias",
+                projectsHeader: "Projetos Destacados",
+                projectReceitanet: "ReceitaNet - SISTEMA PARA ADMINISTRAÇÃO DE PROVEDORES"
+            },
+            en: {
+                name: "Rafael Harthopf Pereira",
+                profession: "Back-End Developer",
+                contactHeader: "Contact",
+                linkedin: "LinkedIn",
+                whatsapp: "WhatsApp",
+                phone: "(18) 99794-1144",
+                email: "Email",
+                summaryHeader: "Professional Summary",
+                summaryText: "Back-End Developer with solid experience in JavaScript, TypeScript, Node.js, and PHP (Laravel). Expertise in microservices architectures, integration with AWS and Kafka, and developing secure and scalable solutions for financial and banking sectors. Advanced skills in SQL, MongoDB, and PostgreSQL databases, with a proven track record of delivering challenging and efficient projects.",
+                experienceHeader: "Professional Experience",
+                mikrotikTitle: "Web Fullstack Developer | MikroTikRio",
+                mikrotikLocation: "Presidente Prudente, SP | 11/2023 – Present",
+                mikrotik1: "Main development on web projects using PHP (Laravel) for backend and Bootstrap for frontend.",
+                mikrotik2: "Contributed to the design and implementation of complex systems, focusing on efficiency and scalability.",
+                mikrotik3: "Significant experience in API integrations and banking management for process optimization and transaction security.",
+                mikrotik4: "Microservices using AWS (Amazon Web Services), Docker, and Kafka.",
+                dharmaTitle: "Back-End Developer | Dharma IT Solutions",
+                dharmaLocation: "Presidente Prudente, SP | 09/2022 – 10/2023",
+                dharma1: "Development of resilient and scalable products using NestJS, Node.js, JavaScript, and TypeScript.",
+                dharma2: "Significant experience in API integrations.",
+                dharma3: "Work with microservices using AWS (Amazon Web Services), Docker, and Kafka.",
+                dharma4: "Effective collaboration with frontend teams for component integration.",
+                internTitle: "Back-End Intern | Dharma IT Solutions",
+                internLocation: "Presidente Prudente, SP | 04/2021 – 08/2022",
+                intern1: "Development of resilient and scalable products using Node.js, JavaScript, and TypeScript.",
+                intern2: "Significant experience in API integrations.",
+                intern3: "Effective collaboration with frontend teams for component integration.",
+                educationHeader: "Education",
+                educationText: "Technologist in Systems Analysis and Development | TOLEDO PRUDENTE | Presidente Prudente",
+                skillsHeader: "Technical Skills",
+                skillsLang: "Programming Languages",
+                skillsFramework: "Frameworks",
+                skillsDb: "Databases",
+                skillsTools: "Technologies and Tools",
+                skillsMethod: "Methodologies",
+                projectsHeader: "Featured Projects",
+                projectReceitanet: "ReceitaNet - SYSTEM FOR PROVIDER MANAGEMENT"
+            },
+            es: {
+                name: "Rafael Harthopf Pereira",
+                profession: "Desarrollador Back-End",
+                contactHeader: "Contacto",
+                linkedin: "LinkedIn",
+                whatsapp: "WhatsApp",
+                phone: "(18) 99794-1144",
+                email: "Correo Electrónico",
+                summaryHeader: "Resumen Profesional",
+                summaryText: "Desarrollador Back-End con experiencia sólida en JavaScript, TypeScript, Node.js y PHP (Laravel). Experto en arquitecturas de microservicios, integración con AWS y Kafka, y desarrollo de soluciones seguras y escalables para los sectores financiero y bancario. Habilidades avanzadas en bases de datos SQL, MongoDB y PostgreSQL, con un historial comprobado de entrega de proyectos desafiantes y eficientes.",
+                experienceHeader: "Experiencia Profesional",
+                mikrotikTitle: "Desarrollador Web Fullstack | MikroTikRio",
+                mikrotikLocation: "Presidente Prudente, SP | 11/2023 – Actual",
+                mikrotik1: "Desarrollo principal en proyectos web utilizando PHP (Laravel) para backend y Bootstrap para frontend.",
+                mikrotik2: "Contribución en el diseño e implementación de sistemas complejos, enfocados en eficiencia y escalabilidad.",
+                mikrotik3: "Experiencia significativa en integraciones de API y gestión bancaria para optimizar procesos y seguridad de transacciones financieras.",
+                mikrotik4: "Microservicios utilizando AWS (Amazon Web Services), Docker y Kafka.",
+                dharmaTitle: "Desarrollador Backend | Dharma IT Solutions",
+                dharmaLocation: "Presidente Prudente, SP | 09/2022 – 10/2023",
+                dharma1: "Desarrollo de productos con arquitecturas resilientes y escalables utilizando NestJS, Node.js, JavaScript y TypeScript.",
+                dharma2: "Experiencia significativa en integraciones de API.",
+                dharma3: "Trabajo con microservicios utilizando AWS (Amazon Web Services), Docker y Kafka.",
+                dharma4: "Colaboración efectiva con equipos frontend para integración de componentes.",
+                internTitle: "Interno Backend | Dharma IT Solutions",
+                internLocation: "Presidente Prudente, SP | 04/2021 – 08/2022",
+                intern1: "Desarrollo de productos con arquitecturas resilientes y escalables utilizando Node.js, JavaScript y TypeScript.",
+                intern2: "Experiencia significativa en integraciones de API.",
+                intern3: "Colaboración efectiva con equipos frontend para integración de componentes.",
+                educationHeader: "Formación",
+                educationText: "Tecnólogo en Análisis y Desarrollo de Sistemas | TOLEDO PRUDENTE | Presidente Prudente",
+                skillsHeader: "Habilidades Técnicas",
+                skillsLang: "Lenguajes de Programación",
+                skillsFramework: "Frameworks",
+                skillsDb: "Bases de Datos",
+                skillsTools: "Tecnologías y Herramientas",
+                skillsMethod: "Metodologías",
+                projectsHeader: "Proyectos Destacados",
+                projectReceitanet: "ReceitaNet - SISTEMA PARA ADMINISTRACIÓN DE PROVEEDORES"
+            }
+        };
+
+        function changeLanguage(lang) {
+            const selectedLanguage = languages[lang];
+            document.getElementById('name').innerText = selectedLanguage.name;
+            document.getElementById('profession').innerText = selectedLanguage.profession;
+            document.getElementById('contact-header').innerText = selectedLanguage.contactHeader;
+            document.getElementById('linkedin').innerText = selectedLanguage.linkedin;
+            document.getElementById('whatsapp').innerText = selectedLanguage.whatsapp;
+            document.getElementById('phone').innerText = selectedLanguage.phone;
+            document.getElementById('email').innerText = selectedLanguage.email;
+            document.getElementById('summary-header').innerText = selectedLanguage.summaryHeader;
+            document.getElementById('summary-text').innerText = selectedLanguage.summaryText;
+            document.getElementById('experience-header').innerText = selectedLanguage.experienceHeader;
+            document.getElementById('mikrotik-title').innerText = selectedLanguage.mikrotikTitle;
+            document.getElementById('mikrotik-location').innerText = selectedLanguage.mikrotikLocation;
+            document.getElementById('mikrotik-1').innerText = selectedLanguage.mikrotik1;
+            document.getElementById('mikrotik-2').innerText = selectedLanguage.mikrotik2;
+            document.getElementById('mikrotik-3').innerText = selectedLanguage.mikrotik3;
+            document.getElementById('mikrotik-4').innerText = selectedLanguage.mikrotik4;
+            document.getElementById('dharma-title').innerText = selectedLanguage.dharmaTitle;
+            document.getElementById('dharma-location').innerText = selectedLanguage.dharmaLocation;
+            document.getElementById('dharma-1').innerText = selectedLanguage.dharma1;
+            document.getElementById('dharma-2').innerText = selectedLanguage.dharma2;
+            document.getElementById('dharma-3').innerText = selectedLanguage.dharma3;
+            document.getElementById('dharma-4').innerText = selectedLanguage.dharma4;
+            document.getElementById('intern-title').innerText = selectedLanguage.internTitle;
+            document.getElementById('intern-location').innerText = selectedLanguage.internLocation;
+            document.getElementById('intern-1').innerText = selectedLanguage.intern1;
+            document.getElementById('intern-2').innerText = selectedLanguage.intern2;
+            document.getElementById('intern-3').innerText = selectedLanguage.intern3;
+            document.getElementById('education-header').innerText = selectedLanguage.educationHeader;
+            document.getElementById('education-text').innerText = selectedLanguage.educationText;
+            document.getElementById('skills-header').innerText = selectedLanguage.skillsHeader;
+            document.getElementById('skills-lang').innerText = selectedLanguage.skillsLang;
+            document.getElementById('skills-framework').innerText = selectedLanguage.skillsFramework;
+            document.getElementById('skills-db').innerText = selectedLanguage.skillsDb;
+            document.getElementById('skills-tools').innerText = selectedLanguage.skillsTools;
+            document.getElementById('skills-method').innerText = selectedLanguage.skillsMethod;
+            document.getElementById('projects-header').innerText = selectedLanguage.projectsHeader;
+            document.getElementById('project-receitanet').innerText = selectedLanguage.projectReceitanet;
+        }
+    </script>
 </body>
 </html>
