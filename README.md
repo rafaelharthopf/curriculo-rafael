@@ -40,23 +40,9 @@ Este é um projeto de **Currículo Interativo**, desenvolvido para exibir inform
    http://localhost:3000
    ```
 
-## 📝 Customização
-
-1. Edite o arquivo `data.js` (ou equivalente) para modificar as informações do currículo:
-   ```javascript
-   const data = {
-       name: "Rafael Harthopf Pereira",
-       profession: "Back-End Developer",
-       linkedin: "https://linkedin.com/in/seuperfil",
-       whatsapp: "https://wa.me/5518997941144",
-       // Outros campos
-   };
-   ```
-2. Ajuste o design no arquivo CSS ou estilizações do framework.
-
 ## 🌐 Demonstração
 
-Veja a versão hospedada do projeto [aqui](https://seu-link-de-demonstracao).
+Veja a versão hospedada do projeto [aqui]([https://seu-link-de-demonstracao](https://rafaelharthopf.github.io/curriculo-rafael/)).
 
 ## 📄 Licença
 
